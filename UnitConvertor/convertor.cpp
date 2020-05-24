@@ -40,7 +40,7 @@ Convertor::Convertor(QWidget* parent) : QWidget(parent), ui(new Ui::Convertor), 
     m_toModel.reset(new CategoryModel());
     // auto editCatModel = new CategoryModel(this);
 
-    readSettings();
+    //  readSettings();
 
     if(m_model->rowCount(QModelIndex()) == 0)
     {
@@ -197,12 +197,30 @@ Convertor::Convertor(QWidget* parent) : QWidget(parent), ui(new Ui::Convertor), 
         Unit* kelvin= m_model->insertData(new Unit(QStringLiteral("kelvin"), QStringLiteral("K"), Unit::TEMPERATURE));
         Unit* fahrenheit
             = m_model->insertData(new Unit(QStringLiteral("fahrenheit"), QStringLiteral("°F"), Unit::TEMPERATURE));
+        Unit* benamran
+            = m_model->insertData(new Unit(QStringLiteral("Benamran"), QStringLiteral("°B"), Unit::TEMPERATURE));
 
         m_convertorTable.insert(QPair<const Unit*, const Unit*>(celsius, kelvin), new ConvertorOperator(1, -273.15));
-        m_convertorTable.insert(QPair<const Unit*, const Unit*>(celsius, fahrenheit), new ConvertorOperator(1.8, 32));
         m_convertorTable.insert(QPair<const Unit*, const Unit*>(kelvin, celsius), new ConvertorOperator(1, 273.15));
+
+        m_convertorTable.insert(QPair<const Unit*, const Unit*>(benamran, celsius),
+                                new ConvertorOperator(705.0 / 374.0, 4.2));
+        m_convertorTable.insert(QPair<const Unit*, const Unit*>(celsius, benamran),
+                                new ConvertorOperator(705.0 / 374.0, -4.2, true));
+
+        m_convertorTable.insert(QPair<const Unit*, const Unit*>(benamran, kelvin),
+                                new ConvertorOperator(705.0 / 374.0, 4.2 + 273.15));
+        m_convertorTable.insert(QPair<const Unit*, const Unit*>(kelvin, benamran),
+                                new ConvertorOperator(705.0 / 374.0, -4.2 - 273.15, true));
+
+        m_convertorTable.insert(QPair<const Unit*, const Unit*>(celsius, fahrenheit), new ConvertorOperator(1.8, 32));
         m_convertorTable.insert(QPair<const Unit*, const Unit*>(fahrenheit, celsius),
                                 new ConvertorOperator(1.8, -32, true));
+
+        m_convertorTable.insert(QPair<const Unit*, const Unit*>(benamran, fahrenheit),
+                                new ConvertorOperator(634.5 / 187.0, 39.56));
+        m_convertorTable.insert(QPair<const Unit*, const Unit*>(fahrenheit, benamran),
+                                new ConvertorOperator(634.5 / 187.0, -39.56, true));
 
         m_convertorTable.insert(QPair<const Unit*, const Unit*>(fahrenheit, kelvin),
                                 new ConvertorOperator(9.0 / 5.0, 459.67, true));
