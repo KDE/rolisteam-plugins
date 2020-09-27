@@ -41,7 +41,7 @@
          </property>
          <property name="icon">
           <iconset resource="../../../../rolisteam.qrc">
-           <normaloff>:/resources/icons/add_round.png</normaloff>:/resources/icons/add_round.png</iconset>
+           <normaloff>:/resources/images/add_round.png</normaloff>:/resources/images/add_round.png</iconset>
          </property>
         </widget>
        </item>
@@ -52,7 +52,7 @@
          </property>
          <property name="icon">
           <iconset resource="../../../../rolisteam.qrc">
-           <normaloff>:/resources/icons/delete.png</normaloff>:/resources/icons/delete.png</iconset>
+           <normaloff>:/resources/images/delete.png</normaloff>:/resources/images/delete.png</iconset>
          </property>
         </widget>
        </item>

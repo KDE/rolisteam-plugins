@@ -271,8 +271,8 @@
   </layout>
   <action name="m_reverseAct">
    <property name="icon">
-    <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/reverse.svg</normaloff>:/resources/icons/reverse.svg</iconset>
+    <iconset theme="reverse">
+     <normaloff>:/resources/images/reverse.svg</normaloff>:/resources/images/reverse.svg</iconset>
    </property>
    <property name="text">
     <string>Reverse</string>
@@ -280,8 +280,8 @@
   </action>
   <action name="m_customRuleAct">
    <property name="icon">
-    <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/list.svg</normaloff>:/resources/icons/list.svg</iconset>
+    <iconset theme="list">
+     <normaloff>:/resources/images/list.svg</normaloff>:/resources/images/list.svg</iconset>
    </property>
    <property name="text">
     <string>Custom Rule</string>
@@ -289,8 +289,8 @@
   </action>
   <action name="m_addUnitAction">
    <property name="icon">
-    <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/add_round.png</normaloff>:/resources/icons/add_round.png</iconset>
+    <iconset>
+     <normaloff>:/resources/images/add_round.png</normaloff>:/resources/images/add_round.png</iconset>
    </property>
    <property name="text">
     <string>Add</string>
@@ -301,8 +301,8 @@
   </action>
   <action name="m_removeUnit">
    <property name="icon">
-    <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/delete.png</normaloff>:/resources/icons/delete.png</iconset>
+    <iconset>
+     <normaloff>:/resources/images/delete.png</normaloff>:/resources/images/delete.png</iconset>
    </property>
    <property name="text">
     <string>Remove Unit</string>
@@ -325,8 +325,6 @@
   </action>
  </widget>
  <resources>
-  <include location="../../../../rolisteam.qrc"/>
-  <include location="../../../../rolisteam.qrc"/>
   <include location="../../../noteeditor/src/textedit.qrc"/>
  </resources>
  <connections/>

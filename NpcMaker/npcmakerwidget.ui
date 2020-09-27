@@ -112,7 +112,7 @@
          <item row="2" column="0">
           <widget class="QLabel" name="label_7">
            <property name="text">
-            <string>Initiative Command</string>
+            <string>Initiative Command</string>
            </property>
           </widget>
          </item>
@@ -688,7 +688,7 @@
   <action name="m_addActionAct">
    <property name="icon">
     <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/add_round.png</normaloff>:/resources/icons/add_round.png</iconset>
+     <normaloff>:/resources/images/add_round.png</normaloff>:/resources/images/add_round.png</iconset>
    </property>
    <property name="text">
     <string>Add Action</string>
@@ -700,7 +700,7 @@
   <action name="m_removeActionAct">
    <property name="icon">
     <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/delete.png</normaloff>:/resources/icons/delete.png</iconset>
+     <normaloff>:/resources/images/delete.png</normaloff>:/resources/images/delete.png</iconset>
    </property>
    <property name="text">
     <string>Remove Action</string>
@@ -712,7 +712,7 @@
   <action name="m_addShapeAct">
    <property name="icon">
     <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/add_round.png</normaloff>:/resources/icons/add_round.png</iconset>
+     <normaloff>:/resources/images/add_round.png</normaloff>:/resources/images/add_round.png</iconset>
    </property>
    <property name="text">
     <string>Add Shape</string>
@@ -724,7 +724,7 @@
   <action name="m_removeShapeAct">
    <property name="icon">
     <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/delete.png</normaloff>:/resources/icons/delete.png</iconset>
+     <normaloff>:/resources/images/delete.png</normaloff>:/resources/images/delete.png</iconset>
    </property>
    <property name="text">
     <string>Remove Shape</string>
@@ -736,7 +736,7 @@
   <action name="m_addPropertyAct">
    <property name="icon">
     <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/add_round.png</normaloff>:/resources/icons/add_round.png</iconset>
+     <normaloff>:/resources/images/add_round.png</normaloff>:/resources/images/add_round.png</iconset>
    </property>
    <property name="text">
     <string>Add Property</string>
@@ -748,7 +748,7 @@
   <action name="m_removePropertyAct">
    <property name="icon">
     <iconset resource="../../../../rolisteam.qrc">
-     <normaloff>:/resources/icons/delete.png</normaloff>:/resources/icons/delete.png</iconset>
+     <normaloff>:/resources/images/delete.png</normaloff>:/resources/images/delete.png</iconset>
    </property>
    <property name="text">
     <string>Remove Property</string>
