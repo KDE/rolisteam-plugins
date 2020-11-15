@@ -5,6 +5,7 @@ class GameMasterTool
 {
 public:
     explicit GameMasterTool();
+    virtual ~GameMasterTool()= default;
 
     virtual void readSettings();
     virtual void writeSettings();
